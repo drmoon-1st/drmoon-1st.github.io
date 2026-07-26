@@ -11,13 +11,13 @@ cv_pdf: khmcv.pdf
   <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh"
-          content="0; url={{ '/assets/pdf/khmcv.pdf' | relative_url }}">
+          content="0; url={{ 'assets/pdf/khmcv.pdf' | relative_url }}">
     <title>CV</title>
   </head>
   <body>
     <p>
       Redirecting to CV PDF...
-      <a href="{{ '/assets/pdf/khmcv.pdf' | relative_url }}">
+      <a href="{{ 'assets/pdf/khmcv.pdf' | relative_url }}">
         Click here if not redirected
       </a>
     </p>
