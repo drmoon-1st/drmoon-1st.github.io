@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://drmoon-1st.github.io/sitemap.xml
