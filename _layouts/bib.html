@@ -6,6 +6,11 @@
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          {%- elsif entry.preview contains '.pdf' -%}
+            {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' | relative_url -%}
+            <a href="{{ entry_path }}" target="_blank" rel="noopener noreferrer">
+              <embed src="{{ entry_path }}#page=1&view=FitH" type="application/pdf" class="preview z-depth-1 rounded" height="180">
+            </a>
           {%- else -%}
             {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
             {% include figure.html
