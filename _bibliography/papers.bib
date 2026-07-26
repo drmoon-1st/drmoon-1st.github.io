@@ -1,0 +1,70 @@
+---
+---
+@article{jeong2026hqdetransformer,
+  title     = {{HQDETransformer}: Hybrid Quantum Denoising Transformer for Time Series Forecasting},
+  author    = {Jeong$*$, Seon-Geun and Moon$*$, Kyeong-Hwan and Hwang, Won-Joo},
+  journal   = {Scientific},
+  year      = {2026},
+  preview   = {hqdetransformer.pdf},
+  note      = {$*$ indicates equal contribution.},
+  abstract  = {Accurate prediction of the remaining useful life (RUL) of lithium-ion batteries is critical for enhancing the reliability and safety of battery-powered systems, especially in electric vehicles. While recent machine learning approaches such as Transformers and recurrent neural networks have shown promising results, their deployment in resource-constrained environments is limited due to high computational costs and large model sizes. In this paper, we propose a novel hybrid quantum-classical denoising Transformer (HQDeTransformer) architecture that integrates variational quantum circuits (VQCs) and quantum-enhanced attention mechanisms into a Transformer-based framework. The proposed HQDeTransformer employs a hybrid quantum denoising autoencoder to mitigate noise in capacity degradation sequences and utilizes hybrid quantum-classical neural networks to construct lightweight multi-head attention and feedforward blocks. Experimental evaluations on the NASA and CALCE benchmark datasets demonstrate that HQDeTransformer achieves superior performance compared to conventional machine learning models and quantum machine learning models, while reducing the number of trainable parameters. Furthermore, the use of angle-amplitude quantum embeddings and deeper quantum layers contributes to enhanced generalization and expressivity. These results highlight the potential of hybrid quantum-classical models for lightweight, accurate, and noise-resilient RUL prediction in practical battery management systems.}
+}
+
+@article{jeong2025hybridquantum,
+  title     = {Hybrid Quantum Neural Networks for Efficient Protein-Ligand Binding Affinity Prediction},
+  author    = {Jeong, Seon-Geun and Moon, Kyeong-Hwan and Hwang, Won-Joo},
+  journal   = {EPJ Quantum Technology},
+  year      = {2025},
+  preview   = {hqdeepdtaf.pdf},
+  volume    = {12},
+  number    = {1},
+  pages     = {120},
+  doi       = {10.1140/epjqt/s40507-025-00419-1},
+  url       = {https://doi.org/10.1140/epjqt/s40507-025-00419-1},
+  arxiv     = {2509.11046},
+  abstract  = {Protein-ligand binding affinity is critical in drug discovery, but experimentally determining it is time-consuming and expensive. Artificial intelligence (AI) has been used to predict binding affinity, significantly accelerating this process. However, the high-performance requirements and vast datasets involved in affinity prediction demand increasingly large AI models, requiring substantial computational resources and training time. Quantum machine learning has emerged as a promising solution to these challenges. In particular, hybrid quantum-classical models can reduce the number of parameters while maintaining or improving performance compared to classical counterparts. Despite these advantages, challenges persist: why hybrid quantum models achieve these benefits, whether quantum neural networks (QNNs) can replace classical neural networks, and whether such models are feasible on noisy intermediate-scale quantum (NISQ) devices. This study addresses these challenges by proposing a hybrid quantum neural network (HQNN) that empirically demonstrates the capability to approximate non-linear functions in the latent feature space derived from classical embedding. The primary goal of this study is to achieve a parameter-efficient model in binding affinity prediction while ensuring feasibility on NISQ devices. Numerical results indicate that HQNN achieves comparable or superior performance and parameter efficiency compared to classical neural networks, underscoring its potential as a viable replacement. This study highlights the potential of hybrid QML in computational drug discovery, offering insights into its applicability and advantages in addressing the computational challenges of protein-ligand binding affinity prediction.}
+}
+
+@article{moon2025qsegrnn,
+  title     = {{QSegRNN}: Quantum Segment Recurrent Neural Network for Time Series Forecasting},
+  author    = {Moon$*$, Kyeong-Hwan and Jeong$*$, Seon-Geun and Hwang, Won-Joo},
+  journal   = {EPJ Quantum Technology},
+  year      = {2025},
+  preview   = {qsegrnn.png},
+  volume    = {12},
+  number    = {1},
+  pages     = {32},
+  doi       = {10.1140/epjqt/s40507-025-00333-6},
+  url       = {https://doi.org/10.1140/epjqt/s40507-025-00333-6},
+  note      = {$*$ indicates equal contribution.},
+  abstract  = {Recently many data centers have been constructed for artificial intelligence (AI) research. The important condition of the data center is to supply sufficient electricity, resulting in many electricity transformers being installed. Especially, these electricity transformers have led to significant heat generation in many data centers. Therefore, managing the temperature of electricity transformers has emerged as an important task. Notably, numerous studies are being conducted to manage and forecast the temperature of electricity transformers using artificial intelligence models. However, as the size of predictive models increases and computational demands grow, substantial computing resources are required. Consequently, there are instances where the lack of computing resources makes these models difficult to operate. To address these challenges, we propose a quantum segment recurrent neural network (QSegRNN), a time series forecasting model utilizing quantum computing. QSegRNN leverages quantum computing to achieve comparable performance with fewer parameters than classical counterpart models under similar conditions. QSegRNN inspired by a classical SegRNN uses the quantum cell instead of the classical cell in the model. The advantage of this structure is that it can be designed with fewer parameters under similar architecture. To construct the quantum cell, we benchmark the quantum convolutional circuit with amplitude embedding as the variational quantum circuit, minimizing information loss while considering the limit of noisy intermediate-scale quantum (NISQ) devices. The experiment result illustrates that the forecasting performance of QSegRNN achieves better performance than SegRNN and other forecasting models even though QSegRNN has only 85 percent of the parameters.}
+}
+
+@article{moon2024supcon,
+  title     = {{SupCon-MPL-DP}: Supervised Contrastive Learning with Meta Pseudo Labels for Deepfake Image Detection},
+  author    = {Moon, Kyeong-Hwan and Ok, Soo-Yol and Lee, Suk-Hwan},
+  journal   = {Applied Sciences},
+  year      = {2024},
+  preview   = {supconmpl.png},
+  volume    = {14},
+  number    = {8},
+  pages     = {3249},
+  doi       = {10.3390/app14083249},
+  url       = {https://doi.org/10.3390/app14083249},
+  abstract  = {Recently, there has been considerable research on deepfake detection. However, most existing methods face challenges in adapting to the advancements in new generative models within unknown domains. In addition, the emergence of new generative models capable of producing and editing high-quality images, such as diffusion, consistency, and LCM, poses a challenge for traditional deepfake training models. These advancements highlight the need for adapting and evolving existing deepfake detection techniques to effectively counter the threats posed by sophisticated image manipulation technologies. In this paper, our objective is to detect deepfake videos in unknown domains using unlabeled data. Specifically, our proposed approach employs Meta Pseudo Labels (MPL) with supervised contrastive learning, so-called SupCon-MPL, allowing the model to be trained on unlabeled images. MPL involves the simultaneous training of both a teacher model and a student model, where the teacher model generates pseudo labels utilized to train the student model. This method aims to enhance the adaptability and robustness of deepfake detection systems against emerging unknown domains. Supervised contrastive learning utilizes labels to compare samples within similar classes more intensively, while encouraging greater distinction from samples in dissimilar classes. This facilitates the learning of features in a diverse set of deepfake images by the model, consequently contributing to the performance of deepfake detection in unknown domains. When utilizing the ResNet50 model as the backbone, SupCon-MPL exhibited an improvement of 1.58% in accuracy compared with traditional MPL in known domain detection. Moreover, in the same generation of unknown domain detection, there was a 1.32% accuracy enhancement, while in the detection of post-generation unknown domains, there was an 8.74% increase in accuracy.}
+}
+
+@article{moon2024metapseudo,
+  title     = {Meta Pseudo Labels Based Deepfake Video Detection},
+  author    = {Moon, Kyeong-Hwan and Ok, Soo-Yul and Seo, Jeongil and Lee, Suk-Hwan},
+  journal   = {Journal of Korea Multimedia Society},
+  year      = {2024},
+  preview   = {mpl.png},
+  volume    = {27},
+  number    = {1},
+  pages     = {9--21},
+  issn      = {1229-7771},
+  doi       = {10.9717/kmms.2024.27.1.009},
+  url       = {https://doi.org/10.9717/kmms.2024.27.1.009},
+  abstract  = {Recently, there has been considerable research on deepfake detection. However, most existing methods face challenges in adapting to the advancements in new generative models within unknown domains. In this paper, our objective is to detect deepfake videos in unknown domains using unlabeled data. Specifically, our proposed approach employs Meta Pseudo Labels (MPL), allowing the model to be trained on unlabeled images. MPL involves the simultaneous training of both a Teacher model and a Student model, where the Teacher model generates Pseudo Labels utilized to train the Student model. This method aims to enhance the adaptability and robustness of deepfake detection systems against emerging unknown domains. The experimental results demonstrate an improvement of 1.91% and 1.87% in ACC and AUROC, respectively, for the known domain. Similarly, in the unknown domain, there is an enhancement of 1.59% in ACC and 1.29% in AUROC.}
+}
